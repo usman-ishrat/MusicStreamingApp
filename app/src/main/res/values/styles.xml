@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ThemeOverlay.MusicApp.BottomNavigation" parent="">
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnSurface">@color/black</item>
+        <item name="colorOnSurfaceVariant">@color/medium_gray</item>
+    </style>
+
+    <style name="TextAppearance.MusicApp.BottomNav.Label" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">11sp</item>
+        <item name="android:letterSpacing">0.01</item>
+    </style>
+
+    <!-- Flat white bar, no elevation; ripple only. Indicator attrs vary by Material version — set on views if needed. -->
+    <style name="Widget.MusicApp.BottomNavigation" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="android:background">@color/white</item>
+        <item name="backgroundTint">@color/white</item>
+        <item name="android:elevation">0dp</item>
+        <item name="elevation">0dp</item>
+        <item name="materialThemeOverlay">@style/ThemeOverlay.MusicApp.BottomNavigation</item>
+        <item name="itemRippleColor">#15121212</item>
+        <item name="itemIconSize">24dp</item>
+        <item name="itemPaddingTop">6dp</item>
+        <item name="itemPaddingBottom">8dp</item>
+        <item name="android:minHeight">56dp</item>
+        <item name="itemTextAppearanceInactive">@style/TextAppearance.MusicApp.BottomNav.Label</item>
+        <item name="itemTextAppearanceActive">@style/TextAppearance.MusicApp.BottomNav.Label</item>
+    </style>
+
+</resources>

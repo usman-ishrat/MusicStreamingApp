@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">MusicStreamingApp</string>
+
+    <!-- Login -->
+    <string name="welcome_back">Welcome Back!</string>
+    <string name="hint_email">Enter your email</string>
+    <string name="hint_password">Enter your password</string>
+    <string name="start_listening">Start Listening</string>
+    <string name="sign_up_prompt">Don\'t have an account? Sign Up</string>
+    <string name="login_loading_message">Connecting to server…\nFirst request may take up to 90 seconds while the API wakes up.</string>
+
+    <!-- Bottom nav -->
+    <string name="nav_home">Home</string>
+    <string name="nav_discover">Discover</string>
+    <string name="nav_favourite">Favourite</string>
+    <string name="nav_profile">Profile</string>
+
+    <!-- Home -->
+    <string name="search_hint">Search for songs, artists, or albums</string>
+    <string name="trending_playlists">Trending Playlists</string>
+    <string name="new_releases">New Releases</string>
+    <string name="playlist_chill">Chill Vibes</string>
+    <string name="playlist_top_hits">Top Hits</string>
+    <string name="playlist_workout">Workout Mix</string>
+    <string name="playlist_party">Party Playlist</string>
+    <string name="release_albums">Latest Albums</string>
+    <string name="release_singles">Upcoming Singles</string>
+    <string name="release_artists">Featured Artists</string>
+    <string name="release_podcasts">New Podcasts</string>
+
+    <!-- Discover -->
+    <string name="discover_title">Discover</string>
+    <string name="discover_subtitle">Browse genres and charts tailored for you.</string>
+    <string name="browse_categories">Browse categories</string>
+    <string name="genre_pop">Pop</string>
+    <string name="genre_rock">Rock</string>
+    <string name="genre_hiphop">Hip Hop</string>
+    <string name="genre_indie">Indie</string>
+    <string name="discover_charts">Charts</string>
+    <string name="charts_global">Global Top 50</string>
+    <string name="charts_global_sub">Updated daily · Tap to explore</string>
+
+    <!-- Favourites -->
+    <string name="favourite_title">Your favourites</string>
+    <string name="favourite_empty">Save songs and albums here — they\'ll show up once you add them.</string>
+
+    <!-- Profile / settings -->
+    <string name="profile_user_name">User Name</string>
+    <string name="profile_user_plan">User\'s Plan</string>
+    <string name="favourite_genres">Favourite Genres</string>
+    <string name="recently_played">Recently Played</string>
+    <string name="genre_jazz">Jazz</string>
+    <string name="genre_electronic">Electronic</string>
+    <string name="content_desc_profile_photo">Profile photo</string>
+    <string name="content_desc_album_cover">Album cover</string>
+    <string name="recent_album_1_title">Midnight Echoes</string>
+    <string name="recent_album_1_artist">Aurora Lane</string>
+    <string name="recent_album_2_title">Neon Skies</string>
+    <string name="recent_album_2_artist">Kai &amp; The Keys</string>
+    <string name="recent_album_3_title">Velvet Room</string>
+    <string name="recent_album_3_artist">Nova Collective</string>
+    <string name="recent_album_4_title">Silent Waves</string>
+    <string name="recent_album_4_artist">Echo District</string>
+
+    <!-- Dashboard / details -->
+    <string name="dashboard_languages">Languages</string>
+    <string name="dashboard_entity_count">%1$d items</string>
+    <string name="dashboard_empty">No items to display.</string>
+    <string name="retry">Retry</string>
+    <string name="description_label">Description</string>
+</resources>

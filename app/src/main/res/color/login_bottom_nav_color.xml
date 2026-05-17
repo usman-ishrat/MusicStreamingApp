@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- PNG: active tab black, inactive tabs gray (not accent green) -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/black" android:state_checked="true"/>
+    <item android:color="@color/black" android:state_selected="true"/>
+    <item android:color="@color/medium_gray"/>
+</selector>
