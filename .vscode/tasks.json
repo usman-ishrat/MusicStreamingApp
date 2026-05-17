@@ -1,0 +1,68 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "start-emulator",
+      "type": "shell",
+      "command": "/Users/usmanishrat/Library/Android/sdk/emulator/emulator",
+      "args": ["-avd", "Pixel_6"],
+      "isBackground": true,
+      "problemMatcher": {
+        "pattern": {
+          "regexp": "."
+        },
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": ".",
+          "endsPattern": "."
+        }
+      }
+    },
+    {
+      "label": "android-install",
+      "type": "shell",
+      "command": "bash",
+      "args": ["-lc", "cd \"${workspaceFolder}\" && ./gradlew installDebug"],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "focus": false
+      }
+    },
+    {
+      "label": "android-start",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "-lc",
+        "\"${env:HOME}/Library/Android/sdk/platform-tools/adb\" shell am start -n com.example.musicstreamingapp/.MainActivity"
+      ],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "Android: Run on emulator",
+      "type": "shell",
+      "command": "echo",
+      "args": ["Deploy finished — ensure an emulator is connected (check: adb devices)."],
+      "dependsOrder": "sequence",
+      "dependsOn": ["android-install", "android-start"],
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    }
+  ]
+}
