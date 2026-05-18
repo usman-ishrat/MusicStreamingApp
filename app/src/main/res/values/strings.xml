@@ -3,8 +3,8 @@
 
     <!-- Login -->
     <string name="welcome_back">Welcome Back!</string>
-    <string name="hint_email">Enter your email</string>
-    <string name="hint_password">Enter your password</string>
+    <string name="hint_email">Type your student ID</string>
+    <string name="hint_password">Type your first name</string>
     <string name="start_listening">Start Listening</string>
     <string name="sign_up_prompt">Don\'t have an account? Sign Up</string>
     <string name="login_loading_message">Connecting to server…\nFirst request may take up to 90 seconds while the API wakes up.</string>

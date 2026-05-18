@@ -19,12 +19,24 @@
       }
     },
     {
+      "label": "wait-for-device",
+      "type": "shell",
+      "command": "${env:HOME}/Library/Android/sdk/platform-tools/adb",
+      "args": ["wait-for-device", "shell", "while [[ -z $(getprop sys.boot_completed) ]]; do sleep 1; done"],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+    {
       "label": "android-install",
       "type": "shell",
       "command": "export JAVA_HOME='/Applications/Android Studio.app/Contents/jbr/Contents/Home' && ./gradlew installDebug",
       "options": {
         "cwd": "${workspaceFolder}"
       },
+      "dependsOn": ["wait-for-device"],
       "problemMatcher": [],
       "presentation": {
         "reveal": "always",
@@ -52,7 +64,7 @@
       "command": "echo",
       "args": ["Deploy finished — ensure an emulator is connected (check: adb devices)."],
       "dependsOrder": "sequence",
-      "dependsOn": ["android-install", "android-start"],
+      "dependsOn": ["start-emulator", "android-install", "android-start"],
       "problemMatcher": [],
       "group": {
         "kind": "build",
