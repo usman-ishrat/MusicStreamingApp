@@ -5,15 +5,11 @@
       "name": "Run on Android Emulator",
       "type": "android",
       "request": "launch",
-      "appSrcRoot": "${workspaceFolder}/app/src/main",
-      "manifestPath": "${workspaceFolder}/app/src/main/AndroidManifest.xml",
-      "apkPath": "${workspaceFolder}/app/build/outputs/apk/debug/app-debug.apk",
-      "preLaunchTask": "android-install",
-      "package": "com.example.musicstreamingapp",
+      "appSrcRoot": "${workspaceFolder}/app",
       "adbPort": 5037
     },
     {
-      "name": "Build & Launch (via Tasks)",
+      "name": "FORCE Launch (Custom)",
       "type": "node",
       "request": "launch",
       "preLaunchTask": "Android: Run on emulator"
